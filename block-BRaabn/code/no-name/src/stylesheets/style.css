@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* custom-css */
+
+.flex {
+    display: flex;
+}
+.flex-between {
+    display: flex;
+    align-items: center;
+}
+.sidebar {
+    background-color: lightcyan;
+    padding: 20px 40px;
+    height: 730px;
+}
+li {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+    border: 2px solid crimson;
+    padding: 10px 40px;
+    border-radius: 8px;
+    color: darkblue;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.body {
+    max-width: 1000px;
+    margin: 300px auto;
+    position: relative;
+}
+
+i {
+    margin: 20px 50px;
+    color: rgb(127, 245, 245);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.cross-red {
+    color: crimson;
+    margin-right: 5px;
+}
+.flex-between h3 {
+    color:crimson;
+    font-weight: 700;
+    font-size: 32px;
+}
+/* popup */
+button {
+    padding: 15px 25px;
+    font-size: 24px;
+    border-radius: 8px;
+    outline: 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    right: 650px;
+}
+
+.popup {
+    width: 400px;
+    height: 200px;
+    box-shadow: 2px 2px 3px 3px rgb(170, 169, 169);
+    border-radius: 8px;
+    position: relative;
+    bottom: 45px;
+}
+.popup h3 {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 35px;
+}
+.popup i {
+    position: relative;
+    left: 130px;
+}
