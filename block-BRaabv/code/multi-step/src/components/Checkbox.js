@@ -19,22 +19,22 @@ function Checkbox(props) {
                     <form className="checkbox-form">
 
                         <div className="checkbox-flex">
-                            <input type="radio" name="sex" id="male" className="hidden" checked={props.state.male} onChange={props.radioHandler} />
-                            <label htmlFor="male" className="w-full p-2">
-                                <img src="/images/male.jpg" alt="male" className="w-46" />
+                            <input type="radio" name="sex" id="male"  checked={props.state.male} onChange={props.radioHandler} />
+                            <label htmlFor="male" >
+                                <img src="/images/male.jpg" alt="male"/>
                             </label>
 
-                            <input type="radio" name="sex" id="female" className="hidden" checked={props.state.female} onChange={props.radioHandler} />
-                            <label htmlFor="female" className="w-full p-2">
-                                <img src="/images/female.jpg" alt="female" className="w-46" />
+                            <input type="radio" name="sex" id="female" checked={props.state.female} onChange={props.radioHandler} />
+                            <label htmlFor="female">
+                                <img src="/images/female.jpg" alt="female"/>
                             </label>
                         </div>
                         
                         <div className="policy">
-                            <input type="checkbox" name="checkbox" id="option" required />
+                            <input type="checkbox" name="checkbox" id="option" required checked={props.state.option} onChange={props.radioHandler} />
                             <label htmlFor="option">I want to add this option</label>
 
-                            <input type="checkbox" name="policy" id="policy" required />
+                            <input type="checkbox" name="policy" id="policy" required checked={props.state.policy} onChange={props.radioHandler} />
                             <label htmlFor="policy">Please accept policy to proceed further</label>
                         </div>
                     </form>

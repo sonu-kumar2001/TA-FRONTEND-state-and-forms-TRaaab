@@ -18,8 +18,8 @@ class Form extends React.Component {
             choiceTwo: false,
             male: false,
             female: false,
-            option: "",
-            policy: ""
+            option: false,
+            policy: false,
         }
     }
     changeHandler = ({target}) => {
@@ -50,10 +50,10 @@ class Form extends React.Component {
     render() {
         function showUi(steps,incrementHandler,decrementHandler,radioHandler,changeHandler,thisState) {
             if(steps === 1) {
-                return <SignUp incrementHandler={incrementHandler} changeHandler={decrementHandler} state={thisState} />
+                return <SignUp incrementHandler={incrementHandler} changeHandler={changeHandler} state={thisState} />
             } else if(steps === 2) {
                 return <Message decrementHandler={decrementHandler} incrementHandler={incrementHandler} radioHandler={radioHandler} changeHandler={changeHandler} state={thisState}/>
-            } else {
+            } else if(steps === 3) {
                 return  <Checkbox decrementHandler={decrementHandler} radioHandler={radioHandler} changeHandler={changeHandler} state={thisState}/>
             }
         }
