@@ -182,9 +182,6 @@ input {
     outline: 0;
 }
 
-.checkbox-flex input {
-    display: none;
-}
 
 .checkbox-flex label img {
     width: 200px;
@@ -200,4 +197,7 @@ input {
 
 .policy label {
     font-weight: 500;
+}
+.checkbox-flex {
+    display: flex;
 }
